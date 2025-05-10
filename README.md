@@ -5,11 +5,9 @@
 
 A terminal setup that feels like home — clean, seamless, and keyboard-first.
 
-These are my personal dotfiles that I tweak (probably too often) to make my dev workflow feel smooth, focused, and fun.
-
 If you find anything useful here — take it, adapt it, and make it yours.
 
-<img width="1728" alt="Xnip2025-05-10_14-43-10" src="https://github.com/user-attachments/assets/83cc63a7-5595-4806-a1a2-bcb7ae61f721" />
+<img width="1728" alt="Xnip2025-05-10_15-32-28" src="https://github.com/user-attachments/assets/c5ae9eef-a729-41d6-b288-36c62eab15f6" />
 
 ## 🛠 Main Tools
 
