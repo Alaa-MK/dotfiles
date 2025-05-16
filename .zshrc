@@ -35,18 +35,36 @@ export FZF_COMPLETION_TRIGGER='**'
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
 export ANDROID_HOME='/opt/homebrew/Caskroom/android-sdk/4333796'
-
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export PATH="$PATH:/Users/alaa/.local/bin"
-export PATH="$PATH:/Users/alaa/Library/Python/3.9/bin"
-export PATH="$PATH:/Users/alaa/.cargo/bin"
-export PATH="$PATH:$ANDROID_HOME/4333796/tools:/opt/homebrew/Caskroom/android-platform-tools"
-export PATH="$PATH:/Users/alaa/go/bin"
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin/:$PATH"
 export JAVA_HOME="/opt/homebrew/Cellar/openjdk/21/libexec/openjdk.jdk/Contents/Home"
-export PATH="/opt/homebrew/bin:$PATH"
+
+path=(
+    "$HOME/.local/bin"
+    "/opt/homebrew/bin"
+    "/opt/homebrew/opt/openjdk/bin"
+    "/opt/homebrew/opt/mysql-client/bin"
+
+    # Go
+    "$HOME/go/bin"
+
+    # Python
+    "$HOME/Library/Python/3.9/bin"
+
+    # Rust
+    "$HOME/.cargo/bin"
+    "$HOME/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
+
+    # Ruby
+    "/opt/homebrew/opt/ruby/bin"
+    "/opt/homebrew/lib/ruby/gems/3.4.0/bin"
+
+    # Android
+    "$ANDROID_HOME/4333796/tools"
+    "/opt/homebrew/Caskroom/android-platform-tools"
+
+    $path
+)
+typeset -U path  # Remove duplicates from PATH
+export PATH
 
 # Use Vim mode in Zsh
 function zvm_config() {
@@ -77,7 +95,7 @@ fi
 
 export ASDF_NODEJS_AUTO_ENABLE_COREPACK=1
 
-. /Users/alaa/.asdf/asdf.sh
+. /$HOME/.asdf/asdf.sh
 export PATH="$HOME/.asdf/shims:$PATH"
 
 # Zoxide
