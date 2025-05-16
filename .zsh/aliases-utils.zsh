@@ -27,6 +27,8 @@ alias nvaa='nv +"CopilotChat" +"only"'
 
 # Dotfiles
 alias nvdot='nv_with_dir ~/.dotfiles'
+alias nvdot+='nv_with_dir ~/.dotfiles/public'
+alias nvdot-='nv_with_dir ~/.dotfiles/private'
 
 # open a neovim plugin in nvim
 function nvpl() {
