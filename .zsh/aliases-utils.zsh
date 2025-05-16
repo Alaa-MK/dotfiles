@@ -63,6 +63,26 @@ alias pf="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}
 # Exit the terminal with :q
 alias :q="exit"
 
+# Print colors
+function colors() {
+  local color_names=(
+    "Black"
+    "Red"
+    "Green"
+    "Yellow"
+    "Blue"
+    "Magenta"
+    "Cyan"
+    "White"
+  )
+  
+  for i in {0..7}; do
+    tput setaf $i
+    printf "%-10s\n" "${color_names[i+1]}"
+    tput sgr0
+  done
+}
+
 function omz_plugin_search() {
   cat ~/.oh-my-zsh/plugins/$1/$1.plugin.zsh | grep alias | grep $2
 }
