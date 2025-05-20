@@ -1,5 +1,6 @@
 return {
-  "folke/snacks.nvim",
+  "Alaa-MK/snacks.nvim",
+  branch = "feature/support-expander-icons-in-explorer",
   ---@type snacks.Config
   opts = {
     dashboard = {
@@ -35,6 +36,15 @@ return {
         input = {
           keys = {
             -- ["<Esc>"] = { "close", mode = { "n", "i" } },
+          },
+        },
+      },
+
+      ---@diagnostic disable-next-line: missing-fields
+      icons = {
+        tree = {
+          expanders = {
+            enabled = true,
           },
         },
       },
