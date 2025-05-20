@@ -5,3 +5,5 @@
 vim.o.conceallevel = 0
 -- vim.o.timeoutlen = 150
 -- vim.o.wrap = true
+
+vim.g.autoformat = false
