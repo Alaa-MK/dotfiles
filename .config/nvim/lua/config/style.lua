@@ -8,4 +8,4 @@ vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1c1d28" })
 vim.g.snacks_animate = false
 
 -- indentation guides
-vim.opt.listchars = "tab:│——,lead:‧,leadmultispace:│‧‧‧,extends:»,precedes:«"
+vim.opt.listchars = "tab:│——,lead:‧,leadmultispace:│   ,extends:»,precedes:«"

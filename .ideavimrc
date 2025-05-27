@@ -210,8 +210,8 @@ nmap <leader>gs <Action>(ActivateVersionControlToolWindow)
 nmap <leader>gb <Action>(Git.Branches)
 nmap <leader>ghr <Action>(Vcs.RollbackChangedLines)
 nmap <leader>ghp <Action>(VcsShowCurrentChangeMarker)
-nmap ]c <Action>(VcsShowNextChangeMarker)
-nmap [c <Action>(VcsShowPrevChangeMarker)
+nmap ]h <Action>(VcsShowNextChangeMarker)
+nmap [h <Action>(VcsShowPrevChangeMarker)
 nmap <leader>gl <Action>(Git.Pull)
 nmap <leader>gp <Action>(Vcs.Push)
 nmap <leader>gf <Action>(Git.Fetch)
@@ -239,8 +239,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 
 " Tab navigation
-map <C-p> <Action>(NextTab)
-map <C-n> <Action>(PreviousTab)
+map <S-l> <Action>(NextTab)
+map <S-h> <Action>(PreviousTab)
 
 " Stretch splits
 nmap <A-j> <Action>(StretchSplitToBottom)

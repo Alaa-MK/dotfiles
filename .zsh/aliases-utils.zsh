@@ -58,6 +58,7 @@ unalias gk # Remove the oh-my-zsh alias for gk to allow using gitkraken-cli
 # --------------------
 # Miscellaneous
 # --------------------
+alias clr='clear'
 alias pf="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}' --bind ctrl-n:preview-page-up,ctrl-m:preview-page-down"
 
 # Exit the terminal with :q
