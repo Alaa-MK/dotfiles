@@ -3,6 +3,7 @@ return {
   opts = {
     servers = {
       ruby_lsp = {
+        mason = false,
         cmd = { "/Users/alaa/.asdf/shims/ruby-lsp" },
       },
       rubocop = {
