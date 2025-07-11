@@ -49,6 +49,7 @@ path=(
 
     # Python
     "$HOME/Library/Python/3.9/bin"
+    "$HOME/.asdf/installs/python/3.13.0/bin"
 
     # Rust
     "$HOME/.cargo/bin"
@@ -61,6 +62,9 @@ path=(
     # Android
     "$ANDROID_HOME/4333796/tools"
     "/opt/homebrew/Caskroom/android-platform-tools"
+
+    # Utils
+    "$HOME/.zsh/utils"
 
     $path
 )
