@@ -1,0 +1,3 @@
+return {
+  "GeorgesAlkhouri/nvim-aider",
+}
