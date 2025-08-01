@@ -13,6 +13,15 @@ return {
         explorer = {
           hidden = true,
           ignored = true,
+          exclude = {
+            ".git",
+            ".DS_Store",
+            "node_modules",
+            ".aider*",
+            ".idea",
+            ".bundle",
+            ".ruby-lsp",
+          },
         },
         files = {
           hidden = true,
