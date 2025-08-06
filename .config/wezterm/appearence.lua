@@ -16,7 +16,8 @@ function module.apply_to_config(config)
 
 	-- Fonts
 	-- tip: run `wezterm ls-fonts --list-system` to list available fonts
-	config.font = wezterm.font("JetbrainsMono Nerd Font")
+	-- Good so far: JetbrainsMono Nerd Font, Maple Mono NF, IosevkaTerm Nerd Font Mono
+	config.font = wezterm.font("Maple Mono NF")
 	config.font_size = 15.2
 
 	-- Tab/title bar
