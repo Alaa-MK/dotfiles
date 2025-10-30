@@ -33,7 +33,7 @@ function module.apply_to_config(config)
 	}
 
 	-- Transparent background
-	config.window_background_opacity = 0.95
+	-- config.window_background_opacity = 0.95
 	config.macos_window_background_blur = 100
 
 	-- Maximize on start

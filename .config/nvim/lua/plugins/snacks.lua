@@ -21,11 +21,24 @@ return {
             ".idea",
             ".bundle",
             ".ruby-lsp",
+            "vendor",
+            "var",
           },
         },
         files = {
           hidden = true,
           ignored = true,
+          exclude = {
+            ".git",
+            ".DS_Store",
+            "node_modules",
+            ".aider*",
+            ".idea",
+            ".bundle",
+            ".ruby-lsp",
+            "vendor",
+            "var",
+          },
         },
         buffers = {
           hidden = true,
@@ -34,6 +47,17 @@ return {
         grep = {
           hidden = true,
           ignored = true,
+          exclude = {
+            ".git",
+            ".DS_Store",
+            "node_modules",
+            ".aider*",
+            ".idea",
+            ".bundle",
+            ".ruby-lsp",
+            "vendor",
+            "var",
+          },
         },
       },
       formatters = {

@@ -112,8 +112,8 @@ let g:WhichKeyDesc_git_status = "<leader>gs Open Git status dialog"
 let g:WhichKeyDesc_git_branches = "<leader>gb Open Git branches list"
 
 let g:WhichKeyDesc_errors = "<leader>e Error navigation"
-let g:WhichKeyDesc_errors_next = "<leader>en Go to next error in solution"
-let g:WhichKeyDesc_errors_prev = "<leader>ep Go to previous error in solution"
+" let g:WhichKeyDesc_errors_next = "<leader>en Go to next error in solution"
+" let g:WhichKeyDesc_errors_prev = "<leader>ep Go to previous error in solution"
 
 
 "" Key mappings
@@ -155,7 +155,7 @@ map <leader>c <action>(CommentByLineComment)
 map <leader>j <Plug>(easymotion-s)
 
 " Open NERDTree (use q to exit)
-map <leader>n :NERDTreeToggle<CR>
+map <leader>e :NERDTreeToggle<CR>
 
 " Folding
 map <leader>zc :action CollapseAllRegions<CR>
@@ -219,8 +219,8 @@ nmap <leader>gr <Action>(Git.Rebase)
 nmap <leader>ga <Action>(Annotate)
 
 " Errors
-map <leader>en <Action>(ReSharperGotoNextErrorInSolution)
-map <leader>ep <Action>(ReSharperGotoPrevErrorInSolution)
+" map <leader>en <Action>(ReSharperGotoNextErrorInSolution)
+" map <leader>ep <Action>(ReSharperGotoPrevErrorInSolution)
 
 " Run/Debug
 map <leader>rr <Action>(Run)

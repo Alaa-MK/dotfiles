@@ -35,10 +35,11 @@ export FZF_COMPLETION_TRIGGER='**'
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
 export ANDROID_HOME='/opt/homebrew/Caskroom/android-sdk/4333796'
-export JAVA_HOME="/opt/homebrew/Cellar/openjdk/21/libexec/openjdk.jdk/Contents/Home"
+export JAVA_HOME="/opt/homebrew/Cellar/openjdk@21/21.0.8/libexec/openjdk.jdk/Contents/Home"
 export PIPX_DEFAULT_PYTHON="$HOME/.asdf/shims/python3"
 
 path=(
+    "$JAVA_HOME/bin"
     "$HOME/.local/bin"
     "/opt/homebrew/bin"
     "/opt/homebrew/opt/openjdk/bin"
