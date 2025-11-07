@@ -1,4 +1,4 @@
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
+fpath+=($HOME/pure)
 
 autoload -U promptinit; promptinit
 

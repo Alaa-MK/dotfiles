@@ -17,8 +17,8 @@ function module.apply_to_config(config)
 	-- Fonts
 	-- tip: run `wezterm ls-fonts --list-system` to list available fonts
 	-- Good so far: JetbrainsMono Nerd Font, Maple Mono NF, IosevkaTerm Nerd Font Mono
-	config.font = wezterm.font("Maple Mono NF")
-	config.font_size = 15.2
+	config.font = wezterm.font("Maple Mono Light")
+	config.font_size = 12
 
 	-- Tab/title bar
 	config.enable_tab_bar = false
@@ -34,11 +34,10 @@ function module.apply_to_config(config)
 
 	-- Transparent background
 	-- config.window_background_opacity = 0.95
-	config.macos_window_background_blur = 100
 
 	-- Maximize on start
-	config.initial_cols = 192
-	config.initial_rows = 53
+	config.initial_cols = 999
+	config.initial_rows = 99
 
 	-- Don't ask for confirmation when closing the window
 	config.window_close_confirmation = "NeverPrompt"

@@ -9,7 +9,7 @@ BAT_THEME="base16-256"
 HISTSIZE=1000000
 SAVEHIST=1000000
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages history-substring-search docker docker-compose kubectl fzf web-search tmux ls)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode colored-man-pages history-substring-search docker docker-compose kubectl fzf web-search tmux ls)
 
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
 pasteinit() {
@@ -34,16 +34,15 @@ export FZF_CTRL_T_COMMAND='find .'
 export FZF_COMPLETION_TRIGGER='**'
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
-export ANDROID_HOME='/opt/homebrew/Caskroom/android-sdk/4333796'
-export JAVA_HOME="/opt/homebrew/Cellar/openjdk@21/21.0.8/libexec/openjdk.jdk/Contents/Home"
+export ANDROID_HOME="$HOME/Android/Sdk"
+export CAPACITOR_ANDROID_STUDIO_PATH="/snap/bin/android-studio"
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
 export PIPX_DEFAULT_PYTHON="$HOME/.asdf/shims/python3"
 
 path=(
     "$JAVA_HOME/bin"
     "$HOME/.local/bin"
-    "/opt/homebrew/bin"
-    "/opt/homebrew/opt/openjdk/bin"
-    "/opt/homebrew/opt/mysql-client/bin"
+    "/opt/gradle/latest/bin"
 
     # Go
     "$HOME/go/bin"
@@ -57,8 +56,7 @@ path=(
     "$HOME/.rustup/toolchains/stable-aarch64-apple-darwin/bin"
 
     # Ruby
-    "/opt/homebrew/opt/ruby/bin"
-    "/opt/homebrew/lib/ruby/gems/3.4.0/bin"
+    "$HOME/.local/share/gem/ruby/3.3.0/bin"
 
     # Android
     "$ANDROID_HOME/4333796/tools"
@@ -77,7 +75,7 @@ function zvm_config() {
   ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
   ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
 }
-source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # WARNING: The plugin overrides some key bindings. Refer to this link to fix key bindings for specific plugins: https://github.com/jeffreytse/zsh-vi-mode/tree/master?tab=readme-ov-file#execute-extra-commands
 # wrapping the `bindkey` in `zvm_after_init` is needed if you're using the zsh-vi-mode plugin
@@ -99,10 +97,10 @@ if [[ -f ~/.zsh-personal/main.zsh ]]; then
     source ~/.zsh-personal/main.zsh
 fi
 
-export ASDF_NODEJS_AUTO_ENABLE_COREPACK=1
+# export ASDF_NODEJS_AUTO_ENABLE_COREPACK=1
 
-. /$HOME/.asdf/asdf.sh
-export PATH="$HOME/.asdf/shims:$PATH"
+# . /$HOME/.asdf/asdf.sh
+# export PATH="$HOME/.asdf/shims:$PATH"
 
 # Zoxide
 eval "$(zoxide init zsh)"
