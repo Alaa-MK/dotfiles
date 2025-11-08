@@ -8,6 +8,6 @@ return {
         accept = "<C-Space>",
       },
     },
-    copilot_noje_command = "/usr/bin/node",
+    copilot_noje_command = "/usr/local/bin/node",
   },
 }
