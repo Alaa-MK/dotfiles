@@ -47,3 +47,10 @@
 # # which is explained in the docs for that config option.
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
+
+# hide title bar and other stuff
+window-decoration = none
+
+font-size = 11.5
+theme = TokyoNight Night
+maximize = true
