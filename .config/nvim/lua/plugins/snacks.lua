@@ -1,6 +1,5 @@
 return {
-  "Alaa-MK/snacks.nvim",
-  branch = "feature/support-expander-icons-in-explorer",
+  "folke/snacks.nvim",
   ---@type snacks.Config
   opts = {
     dashboard = {
