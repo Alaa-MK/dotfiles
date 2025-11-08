@@ -8,6 +8,6 @@ return {
         accept = "<C-Space>",
       },
     },
-    copilot_node_command = "/opt/homebrew/bin/node",
+    copilot_noje_command = "/usr/bin/node",
   },
 }
