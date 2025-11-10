@@ -40,6 +40,29 @@ function nvpl() {
   nv_with_dir ~/.local/share/nvim/lazy/$plugin_dir
 }
 
+# create a new neovim plugin config file from a github repo string
+function nv-plugin() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: nv-plugin owner/repo"
+    return 1
+  fi
+
+  local plugin_string="$1"
+  local repo_name="${plugin_string#*/}"
+  local file_basename="${repo_name%.nvim}"
+  local file_name="${file_basename}.lua"
+
+  local plugins_dir="${HOME}/.dotfiles/public/.config/nvim/lua/plugins"
+  local file_path="${plugins_dir}/${file_name}"
+
+  if [[ ! -f "$file_path" ]]; then
+    mkdir -p "$plugins_dir"
+    print "return {\n  \"$plugin_string\",\n  opts = {},\n}" > "$file_path"
+  fi
+
+  nv "$file_path"
+}
+
 # --------------------
 # Tmux
 # --------------------
