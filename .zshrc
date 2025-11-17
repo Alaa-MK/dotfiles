@@ -63,7 +63,9 @@ path=(
     "/opt/homebrew/Caskroom/android-platform-tools"
 
     # Utils
-    "$HOME/.zsh/utils"
+    "$HOME/scripts"
+
+    # Scripts
 
     $path
 )

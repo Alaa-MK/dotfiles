@@ -41,7 +41,7 @@ function nvpl() {
 }
 
 # create a new neovim plugin config file from a github repo string
-function nv-plugin() {
+function nvp() {
   if [[ -z "$1" ]]; then
     echo "Usage: nv-plugin owner/repo"
     return 1
