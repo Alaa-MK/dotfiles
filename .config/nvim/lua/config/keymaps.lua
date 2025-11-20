@@ -20,3 +20,6 @@ map("n", "<leader>u<tab>", "<cmd>set list!<cr>", { desc = "Toggle Indentation Ch
 
 -- Formatting
 map("n", "<leader>cj", ":%!jq<CR>:setfiletype json<CR>", { noremap = true, silent = true, desc = "Format JSON" })
+
+-- Git status in Neotreeo
+map("n", "<leader>gs", "<cmd>Neotree git_status<cr>", { noremap = true, silent = true, desc = "Git Status (Neotree)" })
