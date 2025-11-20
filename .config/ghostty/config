@@ -50,6 +50,8 @@
 
 # hide title bar and other stuff
 window-decoration = none
+background-image = /home/alaa/Downloads/itachi-uchiha-naruto-amoled-black-background-minimal-art-3840x2160-6478.jpg
+background-image-opacity = 0.01
 
 font-size = 12.6
 theme = TokyoNight Night

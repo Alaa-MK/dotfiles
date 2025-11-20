@@ -4,6 +4,7 @@
 
 vim.o.conceallevel = 0
 vim.o.relativenumber = false
+vim.o.cursorline = false
 -- vim.o.timeoutlen = 150
 -- vim.o.wrap = true
 vim.o.tabstop = 2
