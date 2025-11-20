@@ -1,0 +1,56 @@
+[[keymaps]]
+command = "PageSelectPreviousOrScrollUp"
+key_sequence = "C-u"
+
+[[keymaps]]
+command = "PageSelectNextOrScrollDown"
+key_sequence = "C-d"
+
+# [[keymaps]]
+# command = "PreviousTrack"
+# key_sequence = "g p"
+#
+# [[keymaps]]
+# command = "Search"
+# key_sequence = "C-c C-x /"
+#
+# [[keymaps]]
+# command = "ResumePause"
+# key_sequence = "M-enter"
+#
+# [[keymaps]]
+# command = "None"
+# key_sequence = "q"
+#
+# [[keymaps]]
+# command = { VolumeChange = { offset = 1 } }
+# key_sequence = "-"
+#
+# [[keymaps]]
+# command = { SeekForward = { duration = 10 } }
+# key_sequence = "E"
+#
+# [[keymaps]]
+# command = { SeekBackward = { } }
+# key_sequence = "Q"
+#
+#
+# ========
+# ACTIONS
+# ========
+[[actions]]
+action = "GoToArtist"
+key_sequence = "g A"
+
+[[actions]]
+action = "GoToAlbum"
+key_sequence = "g B"
+target = "PlayingTrack"
+
+[[actions]]
+action="ToggleLiked"
+key_sequence="C-y"
+#
+# [[actions]]
+# action="GoToRadio"
+# key_sequence="g R"

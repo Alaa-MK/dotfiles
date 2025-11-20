@@ -1,4 +1,4 @@
-theme = "dracula"
+theme = "tokyonight_night"
 client_port = 8080
 login_redirect_uri = "http://127.0.0.1:8989/login"
 playback_format = """
@@ -15,18 +15,18 @@ tracks_playback_limit = 50
 app_refresh_duration_in_ms = 32
 playback_refresh_duration_in_ms = 0
 page_size_in_rows = 20
-play_icon = "▶"
-pause_icon = "▌▌"
+pause_icon = ""
+play_icon = ""
 liked_icon = "♥"
-border_type = "Plain"
+border_type = "Rounded"
 progress_bar_type = "Rectangle"
 progress_bar_position = "Bottom"
 genre_num = 2
 enable_media_control = true
 enable_streaming = "Always"
 enable_cover_image_cache = true
-default_device = "spotify-player"
-seek_duration_secs = 5
+default_device = "Ubuntu Terminal"
+seek_duration_secs = 10
 sort_artist_albums_by_type = false
 
 [layout]
@@ -38,10 +38,10 @@ playlist_percent = 40
 album_percent = 40
 
 [device]
-name = "spotify-player"
+name = "Ubuntu Terminal"
 device_type = "speaker"
-volume = 70
+volume = 100
 bitrate = 320
 audio_cache = false
 normalization = false
-autoplay = false
+autoplay = true

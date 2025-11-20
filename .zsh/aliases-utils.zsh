@@ -30,6 +30,9 @@ alias nvdot='nv_with_dir ~/.dotfiles'
 alias nvdp='nv_with_dir ~/.dotfiles/public'
 alias nvdpr='nv_with_dir ~/.dotfiles/private'
 
+# Other aliases
+alias music='spotify_player'
+
 # open a neovim plugin in nvim
 function nvpl() {
   local plugin_dir=$(find ~/.local/share/nvim/lazy -maxdepth 1 -type d | xargs -I {} basename {} | fzf)
