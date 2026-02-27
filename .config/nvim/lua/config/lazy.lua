@@ -55,3 +55,4 @@ require("lazy").setup({
 require("config.style")
 require("config.misc")
 require("config.highlights")
+require("config.commands")
