@@ -1,6 +1,3 @@
-local colors = require("tokyonight.colors").setup()
-vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = colors.green })
-
 -- Disable anmiations
 vim.g.snacks_animate = false
 

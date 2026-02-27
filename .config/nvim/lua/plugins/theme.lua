@@ -5,12 +5,12 @@ return {
       style = "night",
       lazy = false,
       priority = 1000,
-      transparent = false,
+      transparent = true,
       styles = {
         -- sidebars = "transparent",
         -- floats = "transparent",
       },
-      dim_inactive = true,
+      -- dim_inactive = true,
     },
   },
   {
