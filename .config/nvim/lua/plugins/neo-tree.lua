@@ -1,8 +1,10 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
 
+  enabled = false,
   opts = {
     filesystem = {
+      bind_to_cwd = true,
       filtered_items = {
         visible = true,
       },

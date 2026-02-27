@@ -36,7 +36,7 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
 export ANDROID_HOME="$HOME/Android/Sdk"
 export CAPACITOR_ANDROID_STUDIO_PATH="/snap/bin/android-studio"
-export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
+export JAVA_HOME=/home/alaa/.local/share/JetBrains/Toolbox/apps/android-studio/jbr
 export PIPX_DEFAULT_PYTHON="$HOME/.asdf/shims/python3"
 
 path=(
@@ -64,8 +64,6 @@ path=(
 
     # Utils
     "$HOME/scripts"
-
-    # Scripts
 
     $path
 )
