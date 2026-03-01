@@ -2,7 +2,8 @@ local GOPLS_EXCLUDED = {
   ["gopls.assembly"] = true, -- Browse amd64 assembly
   ["gopls.gc_details"] = true, -- Show compiler optimization details
   ["gopls.client_open_url"] = true, -- Browse gopls feature documentation
-  ["gopls.doc"] = true, -- Browse documentation (type/package/func)
+  -- ["gopls.doc"] = true, -- Browse documentation (type/package/func)
+  ["gopls.split_package"] = true, -- Split package playground (browser UI)
 }
 
 return {
